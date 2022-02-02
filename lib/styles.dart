@@ -4,10 +4,11 @@ class Styles {
 
   static const _textSizeLarge = 25.0;
   static const _textSizeDefault = 20.0;
-  static const _textSizeSmall = 16.0;
+  static const _textSizeSmall = 12.0;
   static const Color _textColorDefault = Colors.black;
   static const Color _textColorFaint = Colors.blueGrey;
   static const Color _textColorBright = Colors.white;
+  static const Color _textColorSpecial = Colors.red;
   static const String _fontNameDefault = 'Roboto';
 
   static const navBarTitle = TextStyle(
@@ -43,6 +44,27 @@ class Styles {
     fontWeight: FontWeight.bold,
     fontSize: _textSizeLarge,
     color: _textColorBright
+  );
+
+  static const titleText = TextStyle(
+    fontFamily: _fontNameDefault,
+    fontWeight: FontWeight.bold,
+    fontSize: _textSizeDefault,
+    color: _textColorSpecial,
+    shadows: [
+      Shadow(
+        color: Colors.black,
+        blurRadius: 5,
+        offset: Offset(2.5, 2)
+      )
+    ]
+  );
+
+  static const jobText = TextStyle(
+    fontFamily: _fontNameDefault,
+    fontWeight: FontWeight.normal,
+    fontSize: _textSizeSmall,
+    color: _textColorDefault
   );
 
 }
