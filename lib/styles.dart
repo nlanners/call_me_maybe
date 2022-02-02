@@ -22,7 +22,14 @@ class Styles {
     fontFamily: _fontNameDefault,
     fontWeight: FontWeight.w700,
     fontSize: _textSizeLarge,
-    color: _textColorFaint
+    color: _textColorFaint,
+    shadows:[
+      Shadow(
+        color: Colors.black,
+        blurRadius: 2,
+        offset: Offset(2.5, 2)
+      )
+    ]
   );
 
   static const normalText = TextStyle(
@@ -36,14 +43,28 @@ class Styles {
     fontFamily: _fontNameDefault,
     fontWeight: FontWeight.bold,
     fontSize: _textSizeLarge,
-    color: _textColorDefault
+    color: _textColorDefault,
+    shadows:[
+      Shadow(
+        color: Colors.white,
+        blurRadius: 3,
+        offset: Offset(2.5, 2)
+      )
+    ]
   );
 
   static const responseText = TextStyle(
     fontFamily: _fontNameDefault,
     fontWeight: FontWeight.bold,
     fontSize: _textSizeLarge,
-    color: _textColorBright
+    color: _textColorBright,
+    shadows:[
+      Shadow(
+        color: Colors.black,
+        blurRadius: 5,
+        offset: Offset(2.5, 2)
+      )
+    ]
   );
 
   static const titleText = TextStyle(

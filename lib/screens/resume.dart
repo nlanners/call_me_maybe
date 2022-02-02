@@ -86,18 +86,24 @@ Widget workEntry(Map entryInfo, BuildContext context) {
             ],
           ),
         ),
-        Align(alignment: Alignment.centerLeft, child: Text(description, style: Styles.jobText,)),
+        Align(
+          alignment: Alignment.centerLeft, 
+          child: Text(
+            description, 
+            style: Styles.jobText,
+          )
+        ),
       ],
     ),
   );
 }
 
 List<Widget> createResume(List jobs, BuildContext context) {
-List<Widget> resume = [];
+  List<Widget> resume = [];
 
-jobs.forEach( (job) {
-  resume.add(workEntry(job, context));
-});
+  for (var job in jobs) {
+    resume.add(workEntry(job, context));
+  }
 
   return resume;
 }
